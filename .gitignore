@@ -1,3 +1,11 @@
+.idea
+*~
+.#*
+*.exe
+*.bin
+system-index.txt
+*.abcl
+*.x86f
 *.FASL
 *.fasl
 *.lisp-temp
