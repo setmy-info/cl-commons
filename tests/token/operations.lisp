@@ -1,11 +1,13 @@
 (in-package :cl-user)
-(defpackage cl-commons/tests/tokens/operations
+(defpackage cl-commons/tests/token/operations
   (:use :cl :rove)
-  (:import-from :cl-commons/tokens/operations :token)
-  (:import-from :cl-commons/tokens/operations :extend)
+  (:import-from :cl-commons/token/operations
+    :token
+    :extend
+  )
   (:import-from :cl-commons/output/operations :println)
 )
-(in-package :cl-commons/tests/tokens/operations)
+(in-package :cl-commons/tests/token/operations)
 
 (deftest test-token-extend
   (testing "extend token list"

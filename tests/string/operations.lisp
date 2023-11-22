@@ -1,8 +1,8 @@
 (in-package :cl-user)
-(defpackage cl-commons/tests/strings/operations
+(defpackage cl-commons/tests/string/operations
   (:use :cl :rove)
-  (:import-from :cl-commons/strings/operations :concat))
-(in-package :cl-commons/tests/strings/operations)
+  (:import-from :cl-commons/string/operations :concat))
+(in-package :cl-commons/tests/string/operations)
 
 (deftest test-concat
   (testing "concate strings"

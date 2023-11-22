@@ -1,7 +1,7 @@
 ;;;; String operations.
 
 (in-package :cl-user)
-(defpackage cl-commons/strings/operations
+(defpackage cl-commons/string/operations
   (:use :cl)
   (:export 
           :concat 
@@ -9,7 +9,7 @@
           :+empty-string+
   )
 )
-(in-package :cl-commons/strings/operations)
+(in-package :cl-commons/string/operations)
 
 (defconstant +comma-string+ ",")
 (defconstant +empty-string+ "")

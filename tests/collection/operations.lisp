@@ -1,15 +1,17 @@
 (in-package :cl-user)
-(defpackage cl-commons/tests/collections/operations
+(defpackage cl-commons/tests/collection/operations
   (:use :cl
         :rove)
-        (:import-from :cl-commons/collections/operations :apply-concat-many)
-        (:import-from :cl-commons/collections/operations :product)
-        (:import-from :cl-commons/collections/operations :product-as-pairs)
-        (:import-from :cl-commons/collections/operations :pushe)
-        (:import-from :cl-commons/collections/operations :npush)
-        (:import-from :cl-commons/strings/operations :+empty-string+)
+        (:import-from :cl-commons/collection/operations
+          :apply-concat-many
+          :product
+          :product-as-pairs
+          :pushe
+          :npush
         )
-(in-package :cl-commons/tests/collections/operations)
+        (:import-from :cl-commons/string/operations :+empty-string+)
+        )
+(in-package :cl-commons/tests/collection/operations)
 
 (deftest test-apply-concat-many-1
   (testing "should apply-concat-many many lists together"

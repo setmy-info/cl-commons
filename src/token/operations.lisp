@@ -1,13 +1,13 @@
 ;;;; tokenization helper functions
 
 (in-package :cl-user)
-(defpackage cl-commons/tokens/operations
+(defpackage cl-commons/token/operations
   (:use :cl)
   (:export :token)
   (:export :extend)
-  (:import-from :cl-commons/collections/operations :pushe)
+  (:import-from :cl-commons/collection/operations :pushe)
 )
-(in-package :cl-commons/tokens/operations)
+(in-package :cl-commons/token/operations)
 
 (defun token (tocen)
     (list tocen))

@@ -1,15 +1,15 @@
 ;;;; Collection operations.
 
 (in-package :cl-user)
-(defpackage cl-commons/collections/operations
+(defpackage cl-commons/collection/operations
   (:use :cl)  
   (:export :apply-concat-many)
   (:export :product)
   (:export :product-as-pairs)
   (:export :pushe)
-  (:import-from :cl-commons/strings/operations :concat)
+  (:import-from :cl-commons/string/operations :concat)
 )
-(in-package :cl-commons/collections/operations)
+(in-package :cl-commons/collection/operations)
 
 (defun apply-concat-many (&rest lists)
     "Concatenate many lists together"
