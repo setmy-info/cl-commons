@@ -9,7 +9,7 @@
   (testing "println shoul handle parameters correctly"
   (let 
     (
-      (result   (println "Hello, World. Number ~D ~a." 123 "buks"))
+      (result   (println "Number ~D ~a." 123 "buks"))
     )
-    (ok (equal result   "Hello, World. Number 123 buks.#\linefeed"))
+    (ok (equal result   "Number 123 buks.#\linefeed"))
   )))

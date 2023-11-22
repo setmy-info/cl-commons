@@ -3,23 +3,14 @@
 (in-package :cl-user)
 (defpackage cl-commons/tokens/operations
   (:use :cl)
-  (:export :println))
+  (:export :token)
+  (:export :extend)
+  (:import-from :cl-commons/collections/operations :pushe)
+)
 (in-package :cl-commons/tokens/operations)
 
 (defun token (tocen)
-    ;(list :token tocen)
-    (list tocen)
-    )
+    (list tocen))
 
-(defun extend-token (a-list key value)
-    ;(append tocen (list key value)
-    ;(setq a-list (cons key a-list))
-    (setq a-list (cons value a-list))
-    )
-
-(defparameter *a-list* '())
-
-(setq *a-list* (cons "Hello" *a-list*))
-(setq *a-list* (cons "World" *a-list*))
-
-(extend-token (token "Hello") "World")
+(defun extend (a-list value)
+    (pushe a-list value))

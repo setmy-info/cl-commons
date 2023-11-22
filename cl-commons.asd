@@ -9,8 +9,10 @@
   :components ((:module "src"
                 :components
                 (
+                  (:file "strings/operations")
                   (:file "collections/operations")
                   (:file "output/operations")
+                  (:file "tokens/operations")
                   ;(:file "main" :depends-on ("style" "lesson" "foo"))
                 )))
   :build-operation "program-op" ;; leave as is
@@ -28,8 +30,10 @@
   :components ((:module "tests"
                 :components
                 ( 
+                  (:file "strings/operations")
                   (:file "collections/operations")
                   (:file "output/operations")
+                  (:file "tokens/operations")
                 )
               ))
   :description "Test system for cl-commons"
